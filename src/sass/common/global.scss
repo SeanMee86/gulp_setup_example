@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.main {
+  background-color: $bgcolor;
+  color: white;
+  padding-top: 10px;
+  font-family: $roboto;
+  line-height: 1.4;
+
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: url('../../dist/images/forrest_background.jpg') no-repeat center center/cover;
+
+    &:after {
+      content: '';
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fdd1cf;
+      opacity: 0.7;
+    }
+  }
+}
